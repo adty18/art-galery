@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Gallery layout: gunakan grid responsif agar kartu selalu mengisi baris */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem; /* jarak antar kartu */
+  align-items: stretch;
+  padding: 1rem;
+}
+
+/* Pastikan setiap item mengisi kolomnya */
+.gallery > * {
+  width: 100%;
+}
